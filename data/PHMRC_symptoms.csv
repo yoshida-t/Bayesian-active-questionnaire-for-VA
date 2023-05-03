@@ -1,0 +1,169 @@
+IHME_code,IHME_original,short_label
+a1_01_1,Did Decedent Have Asthma?,Asthma
+a1_01_2,Did Decedent Have Arthritis?,Arthritis
+a1_01_3,Did Decedent Have Cancer?,Cancer
+a1_01_4,Did Decedent Have COPD?,COPD
+a1_01_5,Did Decedent Have Dementia?,Dementia
+a1_01_6,Did Decedent Have Depression?,Depression
+a1_01_7,Did Decedent Have Diabetes?,Diabetes
+a1_01_8,Did Decedent Have Epilepsy?,Epilepsy
+a1_01_9,Did Decedent Have Heart Disease?,Heart Disease
+a1_01_10,Did Decedent Have Hypertension?,Hypertension
+a1_01_11,Did Decedent Have Obesity?,Obesity
+a1_01_12,Did Decedent Have Stroke?,Stroke
+a1_01_13,Did Decedent Have TB?,TB
+a1_01_14,Did Decedent Have AIDS?,AIDS
+a2_01,For how long was [name] ill before s/he died? > 528.8?,Duration of Illness
+a2_02,Did [name] have a fever?,Fever
+a2_03,How many days did the fever last? > 8.8?,Prolonged Fever
+a2_04,Was there a moderate to severe fever?,Severe Fever
+a2_05,What was the pattern of fever? Continusous?,Continuous Fever
+a2_05_s1,What was the pattern of fever? On and off?,Intermittent Fever
+a2_06,Did [name] have sweating with the fever?,Fever with Sweats
+a2_07,Did [name] have a rash?,Rash
+a2_08,How many days did [name] have the rash? > 3.1?,Prolonged Rash
+a2_09_1a,Where was the rash located? Face?,Face Rash
+a2_09_1a_s1,Where was the rash located? Trunk?,Trunk Rash
+a2_09_1a_s2,Where was the rash located? Extremities?,Rash on Extermeties
+a2_09_1a_s3,Where was the rash located? Everywhere?,Rash Everywhere
+a2_09_1b,Was there a rash in other locations,Rash Somewhere
+a2_10,Did [name] have sores?,Sores
+a2_11,Did the sores have clear fluid or pus?,Weeping Sores
+a2_12,Did [name] have itching of skin?,Itching
+a2_13,Did [name] have an ulcer (pit) on the foot?,Foot Ulcer
+a2_14,Did the ulcer ooze pus?,Weeping Ulcer
+a2_15,For how many days did the ulcer ooze pus? > 0.3?,Prolonged Weeping Ulcer
+a2_16,Did [name] experience 'pins and needles' in their feet?,Tingling feet
+a2_17,Did [name] have blue lips?,Blue Lips
+a2_18,Had [name] lost weight in the three months prior to death?,Weight Loss
+a2_19,Was there moderate to large weight loss?,Significant Weight Loss
+a2_20,Did [name] look pale?,Pale
+a2_21,Did [name] have yellow discoloration of the eyes?,Jaundiced
+a2_22,For how long did [name] have the yellow discoloration? > 54.1?,Prolonged Juandice
+a2_23,Did [name] have ankle swelling?,Swollen Ankle
+a2_24,For how long did [name] have ankle swelling? > 55.2?,Prolonged Swollen Ankle
+a2_25,Did [name] have puffiness of the face?,Puffy Face
+a2_26,For how long did [name] have puffiness of the face? > 36?,Prolonged Puffy Face
+a2_27,Did [name] have general puffiness all over his/her body?,Puffy Body
+a2_28,For how long did [name] have puffiness all over his/her body?  > 20.3?,Prolonged Puffy Body
+a2_29,Did [name] have a lump in the neck?,Lump in Neck
+a2_30,Did [name] have a lump in the armpit?,Lump in Armpit
+a2_31,Did [name] have a lump in the groin?,Lump in Groin
+a2_32,Did [name] have a cough?,Cough
+a2_33,For how long did [name] have a cough? > 107?,Prolonged Cough
+a2_34,Did the cough produce sputum?,Productive Cough
+a2_35,Did [name] cough blood?,Bloody Cough
+a2_36,Did [name] have difficulty breathing?,Trouble Breathing
+a2_37,For how long did [name] have difficulty breathing? > 100.3?,Prolonged Trouble Breathing
+a2_38,Was the breathing difficulty continuous?,Continuous Trouble Breathing
+a2_38_s1,Was the breathing difficulty on and off?,Intermittent Trouble Breathing
+a2_39_1,Did the breathing difficulty get worse in the lying position?,Increased Trouble Breathing Lying Down
+a2_39_1_s1,Did the breathing difficulty get worse in the sitting position?,Increased Trouble Breathing Sitting
+a2_39_1_s2,Did the breathing difficulty get worse in the walking position?,Increased Trouble Breathing Walking
+a2_39_1_s3,Did the breathing difficulty not get worse in any position?,Trouble Breathing Same in All Positions
+a2_40,Did [name] have fast breathing?,Fast Breathing
+a2_41,For how long did [name] have fast breathing? > 43,Prolonged Fast Breathing
+a2_42,Did [name] wheeze?,Wheezing
+a2_43,Did [name] experience pain in the chest in the month preceding death?,Chest Pain Month before Dying
+a2_44,Did the pain last more than 24 hours?,Chest Pain More than 24 Hours
+a2_45,Was the pain during physical activity?,Chest Pain during Physical Activity
+a2_46a,Was there pain located in the chest?,Chest Pain
+a2_46a_s1,Was there pain located in the left arm?,Pain in Left Arm
+a2_46b,Was there pain located in other places?,Pain Anywhere
+a2_47,Did [name] have more frequent loose or liquid stools than usual?,Loose Stool
+a2_48,For how long before death did [name] have loose or liquid stools? > 4.875348,Prolonged Loose Stool
+a2_49,Did [name] have a change in bowel habits?,Change in Stool
+a2_50,Was there blood in the stool?,Blood in Stool
+a2_51,Was there blood in the stool up until death?,Blood in Stool until Death
+a2_52,Did [name] stop urinating?,Stopped Urinating
+a2_53,Did [name] vomit in the week preceding the death?,Vomit during Week Before Death
+a2_54,For how long before death did [name] vomit? > 3.2,Prolonged Vomiting
+a2_55,Was there blood in the vomit?,Blood in Vomit
+a2_56,Was the vomit black?,Black Vomit
+a2_57,Did [name] have difficulty swallowing?,Difficulty Swallowing
+a2_58,For how long before death did [name] have difficulty swallowing? > 55.2,Prolonged Difficulty Swallowing
+a2_59,Was the difficulty with swallowing with both solids and liquids?,Difficulty Swallowing Liquids and Solids
+a2_60,Did [name] have pain upon swallowing?,Swallowing Pain
+a2_61,Did [name] have belly pain?,Belly Pain
+a2_62,For how long before death did [name] have belly pain? ? 16.7,Prolonged Belly Pain
+a2_63_1,Was there pain in the lower belly?,Lower Belly Pain
+a2_63_2,Was there pain in the upper belly?,Upper Belly pain
+a2_64,Did [name] have a more than usual protruding belly?,Protruding Belly
+a2_65,For how long before death did [name] have a protruding belly?> 45.4,Prolonged Protruding Belly
+a2_66,How rapidly did [name] develop the protruding belly?,Rapid Onset Protruding Belly
+a2_67,Did [name] have any mass in the belly?,Mass in Belly
+a2_68,For how long before death did [name] have a mass in the belly > 34.4?,Prolonged Mass in Belly
+a2_69,Did [name] have headaches?,Headaches
+a2_70,For how long before death did [name] have headaches? > 3.2?,Prolonged Headaches
+a2_71,Was the onset of the headache fast?,Rapid Onset Headaches
+a2_72,Did [name] have a stiff neck?,Stiff Neck
+a2_73,For how long before death did [name] have stiff neck? > 2.2?,Prolonged Stiff Neck
+a2_74,Did [name] experience a period of loss of consciousness?,Loss of Consciousness
+a2_75,Was there a sudden loss of consciousness?,Sudden Loss of Consciousness
+a2_76,For how long did the period of loss of consciousness last? > 1.1?,Prolonged Loss of Consciousness
+a2_77,Did it continue until death?,Unconscious until Death
+a2_78,Did [name] experience a period of confusion at any time in the three months prior to death?,Confusion
+a2_79,For how long did the period of confusion last? > 7.8?,Prolonged Confusion
+a2_80,Was there a sudden start to a period of confusion?,Sudden Confusion
+a2_81,Did [name] experience memory loss at any time in the three months prior to death?,Memory Loss
+a2_82,Did [name] have convulsions?,Convulsions
+a2_83,For how long before death did the convulsions last? > 0.03?,Prolonged Convulsions
+a2_84,Did the person become unconscious immediately after the convulsions?,Convulsions Followd by Unconsciousness
+a2_85,Was [name] in any way paralyzed?,Paralysis
+a2_86,For how long before death did [name] have paralysis? > 20.4?,Prolonged Paralysis
+a2_87_1,Paralyzed right side (arm and leg),Right-side Paralysis
+a2_87_2,Paralyzed left side (arm and leg),Left-side Paralysis
+a2_87_3,Paralyzed lower part of body,Lower-body Paralysis
+a2_87_4,Paralyzed upper part of body,Upper-body Paralysis
+a2_87_5,Paralyzed one leg only,Leg Paralysis
+a2_87_6,Paralyzed one arm only,Arm Paralysis
+a2_87_7,Paralyzed whole body,Whole-body Paralysis
+a2_87_8,Paralyzed refused,Refused to Answer Paralysis
+a2_87_9,Paralyzed don't know,Unknown Paralysis
+a2_87_10a,Paralyzed other,Other Paralysis
+a3_01,Did [name] have any swelling or lump in the breast?,Lump in Breast
+a3_02,Did [name] have any ulcers (pits) in the breast?,Ulcer on Breast
+a3_03,Had [name] periods stopped naturally because of menopause?,Period Stop Menopause
+a3_04,Did [name] have vaginal bleeding after cessation of menstruation? (post menopausal),Post-menopausal Vaginal Bleeding
+a3_05,Did [name] have vaginal bleeding other than her period? (intermenstrual),Vaginal Bleeding other than Period
+a3_06,Was there excessive vaginal bleeding in the week prior to death?,Excess Vaginal Bleeding Week before Death
+a3_07,At the time of death was her period overdue?,Period Overdue at Time of Death
+a3_08,For how many weeks was her period overdue? > 2.9,Period long Overdue
+a3_09,Did [name] have a sharp pain in the belly shortly before death?,Shart Belly Pain Preceding Death
+a3_10,Was [name] pregnant at the time of death?,Pregnant at Time of Death
+a3_12,Did [name] die during an abortion?,Died during Abortion
+a3_13,Did bleeding occur while she was pregnant?,Bleeding during Pegnancy
+a3_14,Did she have excessive bleeding during labor or delivery?,Excessive Bleeding during Labor or Delivery
+a3_15,Did she die during labor or delivery?,Died during Labor or Delivery
+a3_17,Did she die within 6 weeks after having an abortion?,Died within Six Weeks of Abortion
+a3_18,Did she die within 6 weeks of childbirth?,Died within Six Weeks of Childbirth
+a3_19,Did she have excessive bleeding after delivery or abortion?,Excessive Bleeding After Abortion of Childbirth
+a3_20,Did [name] have bad smelling vaginal discharge within 6 weeks after delivery or abortion?,Vaginal Odor within Six Weeks of Abortion or Childbirth
+a4_01,Did [name] use tobacco?,Used Tobacco
+a4_02_1,Type of tobacco used: cigarettes,Smoked Cigarettes
+a4_02_2,Type of tobacco used: pipe,Smoked Pipe
+a4_02_3,Type of tobacco used: chewing,Chewed Tobacco
+a4_02_4,Type of tobacco used: local tobacco,Used Local Tobacco
+a4_02_5a,Type of tobacco used: other,Used Other Tobacco
+a4_02_6,Type of tobacco used: refused,Refused to Answer Tobacco
+a4_02_7,Type of tobacco used: don't know,Used unknown Tobacco
+a4_03,How much pipe/chewing tobacco did [name] use daily?,Frequently Smoked Pipe
+a4_04,How many cigarettes did [name] smoke daily? > 1.2?,Frequently Smoked Cigarettes
+a4_05,Did [name] drink alcohol? > 4.2?,Drank Alcohol
+a4_06,Did [name] drink moderate-high amounts of alcohol?,Heavy Drinker
+a4_06_s1,Did [name] drink low amounts of alcohol?,Light Drinker
+a5_01_1,Decedent suffered road traffic injury,Road Traffic Injury
+a5_01_2,Decedent suffered fall,Fall
+a5_01_3,Decedent suffered drowning,Drowning
+a5_01_4,Decedent suffered poisoning,Poisoning
+a5_01_5,Decedent suffered bite/sting,Bite or Sting
+a5_01_6,Decedent suffered burn,Burn
+a5_01_7,Decedent victim of violence,Violence
+a5_01_8,Decedent did not suffer any injuries,No Injuries
+a5_01_9a,Decedent suffered other injury,Other Injury
+a5_02,Was the injury or accident self-inflicted?,Self-inflicted Injury
+a5_03,Was the injury or accident intentionally inflicted by someone else?,Violent Conflict Injury
+a5_04,How long did [name] survive after the injury? > 8.5?,Prolonged Survival after Injury
+g1_05,Is the respondent female?,Female
+g1_05_s1,Is the respondent male?,Male
+g1_07a,Is the respondent older than 67.6 years old?,Elder
