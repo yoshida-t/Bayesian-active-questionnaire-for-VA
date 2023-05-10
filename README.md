@@ -4,7 +4,10 @@
 ### introduction
 
 This folder contains .R files for functions and experiments illustrated
-in the paper.
+in the paper “Bayesian active questionnaire design for cause-of-death
+assignment using verbal autopsies” by T. Yoshida, T.S. Fan, T.
+McCormick, Z. Wu & Z.R. Li. (2023) (The AHLI Conference on Health,
+Inference, and Learning (CHIL) )
 
 ### File Structure
 
