@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-### introduction
+### Introduction
 
 This folder contains .R files for functions and experiments illustrated
 in the paper “Bayesian active questionnaire design for cause-of-death
