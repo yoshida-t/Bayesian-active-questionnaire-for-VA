@@ -25,7 +25,11 @@ for(fold in 1:K){
 
 
 library(openVA)
+library(xtable)
 PHMRC <- read.csv(getPHMRC_url("adult"))
+tab <- sort(table(PHMRC$gs_text34), dec = TRUE)
+xtable(tab)
+
 binarydata <- ConvertData.phmrc(input = PHMRC, input.test = PHMRC, cause = "gs_text34")
 causes <- as.character(unique(PHMRC$gs_text34))
 causes.ordered <- rev(names(sort(table(PHMRC$gs_text34))))
@@ -77,4 +81,63 @@ g2 <- ggplot(subset(summary, d %in% c(0.5) & p1 < 0.95 & p1 > 0.6)) +
 ggsave(g2, file = "fig/6-experiment-phmrc-stop.pdf", width = 11, height = 12)
 
 
+# add comparison
+load("output/PHMRC_10fold_compare.RData")
+out.compare$cause1[out.compare$cause1 == "Other Non-communicable Diseases"] <- "Other NCD"
+out.compare$truth[out.compare$truth == "Other Non-communicable Diseases"] <- "Other NCD"
+out.compare$correct <- out.compare$cause1 == out.compare$truth
+summary.compare <- aggregate(correct ~ truth + type, data =  out.compare, FUN = mean)  
+base1 <- subset(summary.compare, type == "InterVA")[, c(1, 3)]
+base2 <- subset(summary.compare, type == "InSilicoVA")[, c(1, 3)]
+colnames(base1) <- c("true", "InterVA")
+colnames(base2) <- c("true", "InSilicoVA")
+summary2 <- merge(summary, base1, all.x = TRUE)
+summary2 <- merge(summary2, base2, all.x = TRUE)
 
+label <- data.frame(sort(table(PHMRC$gs_text34)))
+label[,1] <- as.character(label[,1])
+label[label[,1] == "Other Non-communicable Diseases", 1] <- "Other NCD"
+label$new <- paste0(label[,1], "\n", "(n = ", label[,2], ")")
+summary2$label <- label[match(summary2$true, label[,1]), "new"]
+label.ordered <- rev(label$new[order(label$Freq)])
+summary2$label <- factor(summary2$label , levels = label.ordered)
+g3 <- ggplot(subset(summary2, d %in% c(0.5) & p1 < 0.95 & p1 > 0.6)) + 
+      aes(x = length, y = correct, color = Type, shape = factor(p1)) + 
+      geom_hline(aes(yintercept = InterVA), color = "black", alpha = 0.4, linetype = "dashed") + 
+      geom_hline(aes(yintercept = InSilicoVA), color = "red", alpha = 0.4, linetype = "dashed") + 
+      geom_point(alpha = 0.5, size = 3) + 
+      geom_line(aes(group = Type)) +  
+      scale_color_brewer("Stopping Criterion", palette = "Set2") + 
+      theme_bw() + 
+      xlab("Median Number of Questions Asked") + 
+      ylab("Probability of Correct Classification") + 
+      scale_shape_discrete("Threshold (p_1st)") + 
+      facet_wrap(~label ) + 
+      theme(legend.position = "bottom") +
+      ylim(0, 1)
+ggsave(g3, file = "fig/6-experiment-phmrc-stop-with-comparison.pdf", width = 12, height = 12)
+
+# for appendix
+C = length(table(data$true))
+nsplit = 5
+causes.ordered.split = split(causes.ordered, ceiling(seq_along(causes.ordered)/ceiling(C/nsplit)))
+g2_list = vector('list', nsplit)
+for(ni in 1:nsplit){
+  g2_list[[ni]] = ggplot(subset(summary, d %in% c(d_cand) & p1 < 0.95 & p1 > 0.6 & true %in% causes.ordered.split[[ni]])) +
+    aes(x = length, y = correct, color = Type, shape = factor(p1)) + 
+    geom_point(alpha = 0.5, size = 3) + 
+    geom_line(aes(group = Type)) +  
+    scale_color_brewer("Stopping Criterion", palette = "Set2") + 
+    theme_bw() + 
+    xlab("Median Number of Questions Asked") + 
+    ylab("Probability of Correct Classification") + 
+    scale_shape_discrete(bquote('Threshold'~p[1*st])) +
+    facet_grid(true~d, labeller=labeller(.cols=label_both, .rows=label_value)) +
+    theme(legend.position = "bottom") +
+    ylim(0, 1)
+}
+ggsave(g2_list[[1]], file = "fig/6-experiment-phmrc-stop-full1.pdf", width = 11, height = 12)
+ggsave(g2_list[[2]], file = "fig/6-experiment-phmrc-stop-full2.pdf", width = 11, height = 12)
+ggsave(g2_list[[3]], file = "fig/6-experiment-phmrc-stop-full3.pdf", width = 11, height = 12)
+ggsave(g2_list[[4]], file = "fig/6-experiment-phmrc-stop-full4.pdf", width = 11, height = 12)
+ggsave(g2_list[[5]], file = "fig/6-experiment-phmrc-stop-full5.pdf", width = 11, height = 12)
